@@ -35,3 +35,18 @@
     <script src="node_modules/learn-browser/learnBrowser.min.js"></script>
   </body>
 </html>
+// Keys for A, B, and C keys.
+const alphabet = ['a', 'b', 'c'];
+
+// Keep track of index of index outside the event handler.
+let index =0;
+
+// thi is the function that would be invoked by the event listener
+function on KeyDownHandler(e) {
+  const key =e.<key;
+  if (key ===alphabet[index]){
+index++;
+if (index=== alphabet.length) {
+  alert("Hurray");
+index = 0;
+}
